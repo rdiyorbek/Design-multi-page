@@ -1,0 +1,244 @@
+// HERO STYLE START
+
+.web-design__hero {
+}
+.web-design__hero-container {
+  height: 252px;
+  border-radius: 15px;
+  background-image: url("../images/footer-top-bc.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: $primary-white-color;
+}
+
+.web-design__hero-title {
+  text-align: center;
+}
+
+.web-design__hero-describtion {
+  width: 100%;
+  max-width: 730px;
+  margin-top: 24px;
+  text-align: center;
+  font-style: normal;
+  @include fontSetting(1.6rem, 1.6, 400, 6px);
+}
+
+@media screen and (max-width: 819px) {
+  .web-design__hero-title {
+    @include fontSetting(3.2rem, 1, 500, normal);
+  }
+
+  .web-design__hero-describtion {
+    @include fontSetting(1.5rem, 1.6, 400, 4px);
+  }
+}
+
+@media screen and (max-width: 626px) {
+  .web-design__hero-describtion {
+    @include fontSetting(1.5rem, 1.6, 400, 1px);
+  }
+}
+
+@media screen and (max-width: 475px) {
+  .web-design__hero-describtion {
+    @include fontSetting(1.3rem, 1.6, 400, 1px);
+  }
+}
+
+@media screen and (max-width: 432px) {
+  .web-design__hero-describtion {
+    @include fontSetting(1.3rem, 1.6, 400, normal);
+  }
+}
+
+@media screen and (max-width: 381px) {
+  .web-design__hero-describtion {
+    @include fontSetting(1.2rem, 1.6, 400, normal);
+  }
+}
+// HERO STYLE END
+
+// WEB DESIGN STYLES START
+.web-design__sites {
+}
+.web-design__sites-container {
+}
+
+.web-design__sites-wrapper {
+  margin-top: 160px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 478px);
+  row-gap: 32px;
+  column-gap: 30px;
+}
+.web-design__sites-box:nth-child(1) {
+}
+
+.web-design__sites-box__img {
+}
+
+.web-design__sites-hover {
+  border-radius: 0 0 15px 15px;
+  background: #fdf3f0;
+}
+
+.web-design__sites-hover:hover,
+.web-design__sites-hover:active {
+  background-color: $primary-peach-color;
+
+  .web-design__sites-title,
+  .web-design__sites-describtion {
+    color: $primary-white-color;
+  }
+}
+
+.web-design__sites-title {
+  padding-top: 32px;
+  color: $primary-peach-color;
+  text-align: center;
+  font-style: normal;
+}
+
+.web-design__sites-describtion {
+  margin-top: 16px;
+  padding-bottom: 32px;
+  text-align: center;
+  color: $secondary-dark-grey-color;
+  font-style: normal;
+  @include fontSetting(1.6rem, 1.6, 500, normal);
+}
+
+.web-design__sites-box__img {
+  border-radius: 5px;
+}
+
+@media screen and (max-width: 1191px) {
+  .web-design__sites-wrapper {
+    grid-template-columns: repeat(4, 1fr);
+    margin-bottom: 160px;
+    column-gap: 10px;
+    margin-left: 39px;
+  }
+
+  .web-design__sites-box:nth-child(1) {
+    grid-column: 1/2;
+  }
+
+  .web-design__sites-box:nth-child(2) {
+    grid-column: 4/5;
+  }
+
+  .web-design__sites-box:nth-child(3) {
+    grid-row: 2/3;
+    grid-column: 1/2;
+  }
+
+  .web-design__sites-box:nth-child(4) {
+    grid-row: 2/3;
+    grid-column: 4/5;
+  }
+
+  .web-design__sites-box:nth-child(5) {
+    grid-row: 3/4;
+    grid-column: 1/2;
+  }
+
+  .web-design__sites-box:nth-child(6) {
+    grid-row: 3/4;
+    grid-column: 4/5;
+  }
+}
+
+@media screen and (max-width: 867px) {
+  .web-design__sites-wrapper {
+    margin-top: 120px;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(2, 320px);
+  }
+
+  .web-design__sites-box {
+    display: flex;
+    justify-content: center;
+  }
+
+  .web-design__sites-hover {
+    border-radius: 0 0 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-left: 3.2rem;
+    padding-right: 4.1rem;
+  }
+
+  .web-design__sites-box:nth-child(1) {
+    grid-column: 1/2;
+  }
+
+  .web-design__sites-box:nth-child(2) {
+    grid-column: 1/2;
+  }
+
+  .web-design__sites-box:nth-child(3) {
+    grid-column: 1/2;
+  }
+
+  .web-design__sites-box:nth-child(4) {
+    grid-column: 1/2;
+  }
+
+  .web-design__sites-box:nth-child(5) {
+    grid-column: 1/2;
+  }
+
+  .web-design__sites-box:nth-child(6) {
+    grid-column: 1/2;
+  }
+}
+
+@media screen and (max-width: 698px) {
+  .web-design__sites-wrapper {
+    grid-template-rows: repeat(2, 478px);
+    row-gap: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .web-design__sites-hover {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .web-design__sites-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .web-design__sites-hover {
+    border-radius: 0 0 15px 15px;
+  }
+}
+
+@media screen and (max-width: 491px) {
+  .web-design__sites-wrapper {
+    grid-template-columns: repeat(1, 327px);
+    grid-template-rows: repeat(2, 478px);
+    row-gap: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .web-design__sites-hover {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+// WEB DESIGN STYLES END
