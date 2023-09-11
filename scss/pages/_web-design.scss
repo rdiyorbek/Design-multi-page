@@ -77,10 +77,9 @@
   row-gap: 32px;
   column-gap: 30px;
 }
-.web-design__sites-box:nth-child(1) {
-}
 
-.web-design__sites-box__img {
+.graphic-design__sites-wrapper {
+  grid-template-rows: repeat(1, 478px);
 }
 
 .web-design__sites-hover {

@@ -1,0 +1,112 @@
+.contact {
+}
+.contact__container {
+  padding-top: 55px;
+  padding-bottom: 80px;
+  border-radius: 15px;
+  background: #e7816b;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contact__bc-color {
+  margin-top: 160px;
+}
+
+.contact__wrapper {
+  color: $primary-white-color;
+  font-style: normal;
+  margin-right: 10rem;
+}
+
+.contact__describtion {
+  width: 100%;
+  max-width: 445px;
+  margin-top: 32px;
+  @include fontSetting(1.6rem, 1.625, 400, normal);
+}
+
+.contact__form form {
+  position: relative;
+  width: 100%;
+  max-width: 380px;
+  height: 291px;
+}
+
+.contact__form form input,
+form textarea {
+  width: 100%;
+  padding: 11px;
+  border: none;
+  outline: none;
+  color: $secondary-dark-grey-color;
+  background: #e7816b;
+  border-bottom: 1px solid #fff;
+  font-size: 1.6rem;
+  margin-bottom: 0.7rem;
+}
+
+.contact__form textarea {
+  height: 102px;
+}
+
+#contact-btn {
+  display: inline-block;
+  width: 100%;
+  max-width: 152px;
+  height: 56px;
+  background-color: #fff;
+  margin-left: 60%;
+  margin-right: 40%;
+
+  &:hover {
+    background: #ffad9b;
+    border-bottom: none;
+  }
+}
+
+::placeholder {
+  color: #fff;
+  opacity: 0.5;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 26px;
+}
+
+.contact__form form textarea::placeholder {
+  color: #fff;
+}
+
+@media screen and (max-width: 769px) {
+  .contact__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .contact__wrapper {
+    margin-right: 0;
+  }
+
+  .contact__form {
+    margin-top: 40px;
+  }
+
+  .contact__bc-color {
+    margin-top: 120px;
+  }
+
+  .contact-travel__container {
+    margin-top: 120px;
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .contact-travel__container {
+    margin-top: 120px;
+    margin-bottom: 0;
+  }
+}
